@@ -1,4 +1,4 @@
-# Resource-1: Create AppTier Subnet
+# Resource-1: Create AppTier Subnet #
 resource "azurerm_subnet" "appsubnet" {
   name                 = "${azurerm_virtual_network.vnet.name}-${var.app_subnet_name}"
   resource_group_name  = data.azurerm_resource_group.rg.name
