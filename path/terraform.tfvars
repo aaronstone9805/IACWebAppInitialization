@@ -1,5 +1,0 @@
-rg_name         = "mydemo-rg3"
-location        = "eastus"
-storage_name    = "myteststrternew1"
-type            = "Standard"
-replicationtype = "LRS"
