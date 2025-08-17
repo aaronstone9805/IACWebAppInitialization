@@ -15,3 +15,7 @@ terraform {
 provider "azurerm" {
   features {}
 }
+
+provider "azapi" {
+  # No arguments required if you use the same auth as azurerm
+}
