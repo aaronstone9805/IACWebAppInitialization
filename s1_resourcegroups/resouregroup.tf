@@ -38,7 +38,7 @@ module "keyvault" {
 
   location = var.resource_group_location
   source              = "Azure/avm-res-keyvault-vault/azurerm"
-  name                = kv-test-module
+  name                = "${var.resource_group_name}-kv-${local.resource_name_prefix}" # kv-web-app-eastus
   resource_group_name = azurerm_resource_group.rg.name
   tenant_id           = data.azurerm_client_config.this.tenant_id
   enable_telemetry    = false
